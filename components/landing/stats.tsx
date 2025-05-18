@@ -100,7 +100,7 @@ export const Stats = () => {
               initial={{ opacity: 0, y: 24 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6 }}
-              className="flex flex-col justify-between gap-6 rounded-2xl border border-border bg-white/60 p-6 shadow-sm backdrop-blur-lg dark:bg-white/10"
+              className="flex flex-col justify-between gap-6 rounded-2xl border border-border p-6 shadow-sm backdrop-blur-lg"
             >
               <div className="flex items-center justify-between">
                 <Arrow

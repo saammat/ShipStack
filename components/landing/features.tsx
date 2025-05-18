@@ -78,7 +78,7 @@ const FeatureCard = ({ feature, index }: { feature: Feature; index: number }) =>
     >
       <div className="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-br from-primary/20 via-fuchsia-500/10 to-transparent opacity-0 blur-lg transition-opacity duration-500 group-hover:opacity-100 dark:from-primary/30" />
 
-      <Card className="relative h-full rounded-2xl border border-white/20 bg-white/60 backdrop-blur-lg shadow-xl shadow-black/10 transition-shadow group-hover:shadow-black/20 dark:border-white/15 dark:bg-white/10 dark:shadow-white/10">
+      <Card className="relative h-full rounded-2xl border backdrop-blur-lg shadow-xl shadow-black/10 transition-shadow group-hover:shadow-black/20 dark:shadow-white/10">
         <CardHeader className="flex-row items-center gap-5 pb-5">
           <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10">
             <feature.icon className="h-6 w-6 text-primary" />

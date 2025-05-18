@@ -40,19 +40,18 @@ export const Footer = () => {
       <div className="container mx-auto grid lg:grid-cols-2 gap-16 px-8">
         <div className="flex flex-col gap-8">
           <div className="flex items-center gap-3">
-            <Image src="/shipstack.png" alt="ShipStack" width={40} height={40} />
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">ShipStack™</h2>
           </div>
-          <p className="text-muted-foreground text-lg max-w-lg leading-relaxed">
+          <p className="text-lg max-w-lg leading-relaxed">
             {t("description")}
           </p>
           <div className="flex flex-wrap gap-10">
-            <div className="text-sm text-muted-foreground space-y-1">
+            <div className="text-sm space-y-1">
               <p>{t("address.line1")}</p>
               <p>{t("address.line2")}</p>
               <p>{t("address.line3")}</p>
             </div>
-            <div className="text-sm text-muted-foreground space-y-1">
+            <div className="text-sm space-y-1">
               <Link href="/terms" className="hover:text-primary">{t("terms")}</Link>
               <Link href="/privacy" className="hover:text-primary">{t("privacy")}</Link>
             </div>
@@ -67,7 +66,7 @@ export const Footer = () => {
                 <Link
                   key={sub.title}
                   href={sub.href}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="text-sm hover:text-primary transition-colors"
                 >
                   {sub.title}
                 </Link>

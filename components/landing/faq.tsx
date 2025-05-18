@@ -49,7 +49,7 @@ export const FAQ = () => {
           <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
             {t("description")}
           </p>
-          <Button variant="outline" className="gap-3">
+          <Button variant="outline" className="gap-3 w-48">
             {t("button")} <PhoneCall className="w-4 h-4" />
           </Button>
         </div>

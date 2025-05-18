@@ -60,14 +60,9 @@ export const Case = () => {
                   key={i}
                   className="basis-1/1 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 px-2"
                 >
-                  <div className="flex flex-col items-center text-center gap-4 p-6 bg-muted rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex flex-col items-center text-center gap-4 p-6 bg-card rounded-xl shadow-sm hover:shadow-md transition-shadow">
                     <div className="w-full aspect-video relative rounded-md overflow-hidden">
-                      <Image
-                        src={project.logo}
-                        alt={project.name}
-                        fill
-                        className="object-cover"
-                      />
+                      <Image src={project.logo} alt={project.name} fill className="object-cover"/>
                     </div>
                     <div>
                       <div className="text-base font-semibold text-foreground">
