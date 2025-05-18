@@ -67,11 +67,11 @@ export default function Header() {
               <Image src="/shipstack.png" alt="shipstack" width={32} height={32} className="dark:invert dark:brightness-0 dark:hover:opacity-80 hover:opacity-70 transition-opacity" />
               ShipStack
             </Link>
-            <Link href="/showcase" className="text-sm font-medium hover:text-primary">{t("showcase")}</Link>
-            <Link href="/blocks" className="text-sm font-medium hover:text-primary">{t("blocks")}</Link>
-            <Link href="/pricing" className="text-sm font-medium hover:text-primary">{t("pricing")}</Link>
-            <Link href="/docs" className="text-sm font-medium hover:text-primary">{t("docs")}</Link>
-            <Link href="/blog" className="text-sm font-medium hover:text-primary">{t("blog")}</Link>
+            <Link href="#" className="text-sm font-medium hover:text-primary">{t("showcase")}</Link>
+            <Link href="#" className="text-sm font-medium hover:text-primary">{t("blocks")}</Link>
+            <Link href="#" className="text-sm font-medium hover:text-primary">{t("pricing")}</Link>
+            <Link href="#" className="text-sm font-medium hover:text-primary">{t("docs")}</Link>
+            <Link href="#" className="text-sm font-medium hover:text-primary">{t("blog")}</Link>
           </div>
           <div className="flex items-center space-x-4">
             <Select value={locale} onValueChange={(value) => onSelectChange(value as 'en' | 'zh')}>
