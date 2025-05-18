@@ -1,0 +1,468 @@
+{
+  "header": {
+    "locale": "English",
+    "promotion1": "If this project helps you, please give it a ⭐ on",
+    "promotion2": "! Your support motivates us to keep improving.",
+    "showcase": "Showcase",
+    "blocks": "Blocks",
+    "pricing": "Pricing",
+    "docs": "Docs",
+    "blog": "Blog",
+    "localeSwitcherLabel": "Change language",
+    "localeSwitcherLocale": "{locale, select, zh {🇨🇳 简体中文} en {🇺🇸 English} other {未知语言}}",
+    "light": "Light Mode",
+    "dark": "Dark Mode",
+    "system": "System",
+    "signin": "Sign in",
+    "signout": "Sign out",
+    "dashboard": "Dashboard"
+  },
+  "hero": {
+    "typewriterWords": [
+      "build",
+      "deploy",
+      "scale",
+      "optimize"
+    ],
+    "headline": {
+      "prefix": "The fastest way to ",
+      "suffix": " your SaaS."
+    },
+    "description": {
+      "line1": "ShipStack lets you build production-grade SaaS apps by assembling modular blocks.",
+      "line2": "Skip the setup. Forget boilerplate. Auth, billing, deployment—ready out of the box.",
+      "line3": "Focus on your product, we’ll handle the rest."
+    },
+    "buttons": {
+      "start": "Start building",
+      "demo": "Live demo",
+      "docs": "Read the docs"
+    }
+  },
+  "framework": {
+    "footer": "ShipStack is built on the shoulders of giants"
+  },
+  "features": {
+    "heading": {
+      "prefix": "Crafted for ",
+      "highlight": "hyper‑growth"
+    },
+    "modularByDesign": {
+      "title": "Modular by Design",
+      "description": "Assemble production-grade SaaS apps from reusable building blocks. Ship faster without reinventing the wheel."
+    },
+    "prebuiltAuth": {
+      "title": "Prebuilt Auth & Security",
+      "description": "OAuth, magic‑link, RBAC—all set up for you. Focus on features, not user flows."
+    },
+    "billing": {
+      "title": "Subscription & Billing",
+      "description": "Stripe‑powered subscriptions, invoicing and tax handling—ready out of the box."
+    },
+    "deployment": {
+      "title": "Seamless Deployment",
+      "description": "CI/CD integration with Vercel (or your platform of choice) for zero-hassle releases."
+    },
+    "modernStack": {
+      "title": "Modern Tech Stack",
+      "description": "Next.js • Tailwind CSS • shadcn/ui—developer-friendly defaults with best-in-class DX."
+    },
+    "extensible": {
+      "title": "Customizable & Extensible",
+      "description": "Override any component or hook, plug into our event bus or bring your own backend logic."
+    },
+    "globalFirst": {
+      "title": "Global-First",
+      "description": "Built-in i18n with next-intl, locale-aware routing and a language switcher included."
+    },
+    "docsSdk": {
+      "title": "Comprehensive Docs & SDKs",
+      "description": "In-depth guides, code samples and SDKs to get you started in minutes."
+    }
+  },
+  "usageFlow": {
+    "heading": "How to Quickly Build SaaS with ShipStack",
+    "description": "Accelerate your AI SaaS project through these steps",
+    "buttons": {
+      "primary": "Start Now",
+      "secondary": "View Demo"
+    },
+    "steps": [
+      {
+        "title": "Get ShipStack",
+        "description": "Download ShipStack source code from GitHub"
+      },
+      {
+        "title": "Customize Your Project",
+        "description": "Modify templates to fit your features"
+      },
+      {
+        "title": "Deploy to Production",
+        "description": "A few clicks and your project is live"
+      }
+    ]
+  },
+  "caseShowcase": {
+    "title": "Projects built with ShipStack",
+    "projects": {
+      "0": {
+        "name": "Multilingual Portal",
+        "description": "An enterprise portal system supporting global deployment"
+      },
+      "1": {
+        "name": "Sales Dashboard",
+        "description": "Analyze sales performance and team performance"
+      },
+      "2": {
+        "name": "Sales Dashboard",
+        "description": "Analyze sales performance and team performance"
+      },
+      "3": {
+        "name": "Sales Dashboard",
+        "description": "Analyze sales performance and team performance"
+      },
+      "4": {
+        "name": "Sales Dashboard",
+        "description": "Analyze sales performance and team performance"
+      },
+      "5": {
+        "name": "Sales Dashboard",
+        "description": "Analyze sales performance and team performance"
+      },
+      "6": {
+        "name": "Sales Dashboard",
+        "description": "Analyze sales performance and team performance"
+      },
+      "7": {
+        "name": "Sales Dashboard",
+        "description": "Analyze sales performance and team performance"
+      },
+      "8": {
+        "name": "Sales Dashboard",
+        "description": "Analyze sales performance and team performance"
+      },
+      "9": {
+        "name": "Sales Dashboard",
+        "description": "Analyze sales performance and team performance"
+      },
+      "10": {
+        "name": "Sales Dashboard",
+        "description": "Analyze sales performance and team performance"
+      }
+    }
+  },
+  "stats": {
+    "heading": "Trusted by developers, proven by real numbers",
+    "subheading": "ShipStack is built for scale — here’s the data that proves it.",
+    "newUsers": "New users (30d)",
+    "pageViews": "Page views / visits",
+    "revenue": "Monthly recurring revenue",
+    "session": "Average session length (sec)"
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "heading": "Plans that scale with you",
+    "subheading": "Switch anytime. No hidden fees.",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "save": "Save 20%",
+    "popular": "Most popular",
+    "description": {
+      "starter": "Essential tools to get you started.",
+      "growth": "Everything in Starter, plus tools to grow faster.",
+      "enterprise": "Everything in Growth, plus enterprise-grade support and scale."
+    },
+    "unit": {
+      "month": "mo",
+      "year": "yr"
+    },
+    "cta": {
+      "starter": "Start free",
+      "growth": "Go growth",
+      "enterprise": "Contact sales"
+    },
+    "features": {
+      "starter": {
+        "projects": "3 projects",
+        "api": "10k API calls",
+        "support": "Community support",
+        "analytics": "Basic analytics",
+        "notifications": "Email notifications"
+      },
+      "growth": {
+        "projects": "Unlimited projects",
+        "api": "500k API calls",
+        "support": "Email support",
+        "team": "Team collaboration",
+        "domains": "Custom domains",
+        "dashboard": "Analytics dashboard",
+        "webhooks": "Webhook integrations"
+      },
+      "enterprise": {
+        "limits": "Custom limits",
+        "cluster": "Dedicated cluster",
+        "priority": "24/7 priority support",
+        "uptime": "99.9% Uptime SLA",
+        "onboarding": "Onboarding assistance",
+        "integrations": "Custom integrations",
+        "access": "Role-based access"
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "description": "Whether you're just getting started or scaling fast, we're here to support you every step of the way. Here are some common questions to help you get started with ShipStack.",
+    "button": "Still have questions?",
+    "items": [
+      {
+        "question": "What makes ShipStack different from other SaaS starters?",
+        "answer": "ShipStack is not just a template — it’s a production-ready SaaS system built with modular blocks, instant deployment, and prebuilt auth, billing, and more."
+      },
+      {
+        "question": "Can I use ShipStack for commercial projects?",
+        "answer": "Absolutely. ShipStack is designed to help you launch real-world SaaS apps quickly and reliably."
+      },
+      {
+        "question": "Is it possible to customize modules?",
+        "answer": "Yes. Every block in ShipStack is fully extensible and built for developer customization."
+      },
+      {
+        "question": "How is authentication handled?",
+        "answer": "We use secure, prebuilt authentication flows with industry best practices out of the box."
+      },
+      {
+        "question": "Does ShipStack support multi-language apps?",
+        "answer": "Yes, i18n is built-in using next-intl, ready to localize your SaaS app globally."
+      },
+      {
+        "question": "Is there documentation or support?",
+        "answer": "Yes, you’ll find comprehensive docs, code examples, and community support to help you build faster."
+      }
+    ]
+  },
+  "footer": {
+    "description": "Managing a small business today is already tough. ShipStack makes building SaaS easier.",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "address": {
+      "line1": "1 Tailwind Way",
+      "line2": "Menlo Park",
+      "line3": "CA 94025"
+    },
+    "nav": {
+      "home": {
+        "title": "Home"
+      },
+      "product": {
+        "title": "Product",
+        "reports": "Reports",
+        "statistics": "Statistics",
+        "dashboards": "Dashboards",
+        "recordings": "Recordings"
+      },
+      "company": {
+        "title": "Company",
+        "about": "About us",
+        "fundraising": "Fundraising",
+        "investors": "Investors",
+        "contact": "Contact us"
+      }
+    }
+  },
+  "signin": {
+    "welcomeBack": "Welcome back",
+    "loginWithProvider": "Login with your Google or GitHub account",
+    "loginWithGoogle": "Login with Google",
+    "loginWithGitHub": "Login with GitHub",
+    "orContinueWith": "Or continue with",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot your password?",
+    "login": "Login",
+    "noAccount": "Don’t have an account?",
+    "signUp": "Sign up",
+    "agreeTerms": "By clicking continue, you agree to our",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "and": "and",
+    "loginRequiredTitle": "Please log in",
+    "loginRequiredDesc": "You must be logged in to access the page."
+  },
+  "signup": {
+    "createAccount": "Create an account",
+    "signupWithProvider": "Sign up with your Google or Github account",
+    "signUpWithGoogle": "Sign up with Google",
+    "signUpWithGithub": "Sign up with Github",
+    "orContinueWith": "Or continue with",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "m@example.com",
+    "password": "Password",
+    "create": "Create account",
+    "haveAccount": "Already have an account?",
+    "signIn": "Sign in",
+    "agreeTerms": "By clicking continue, you agree to our",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "and": "and"
+  },
+  "dashboard": {
+    "sidebar": {
+      "console": "Console",
+      "main": {
+        "playground": {
+          "title": "Playground",
+          "history": "History",
+          "starred": "Starred",
+          "settings": "Settings"
+        },
+        "models": {
+          "title": "Models",
+          "genesis": "Genesis",
+          "explorer": "Explorer",
+          "quantum": "Quantum"
+        },
+        "docs": {
+          "title": "Documentation",
+          "intro": "Introduction",
+          "getStarted": "Get Started",
+          "tutorials": "Tutorials",
+          "changelog": "Changelog"
+        },
+        "settings": {
+          "title": "Settings",
+          "general": "General",
+          "team": "Team",
+          "billing": "Billing",
+          "limits": "Limits"
+        }
+      },
+      "userMenus": {
+        "title": "User",
+        "upgrade": "Upgrade to Pro",
+        "account": "Account",
+        "billing": "Billing",
+        "notifications": "Notifications",
+        "logout": "Log out",
+        "creditsDetail": "Credit Detail"
+      }
+    },
+    "userMenu": {
+      "title": "User",
+      "upgrade": "Upgrade to Pro",
+      "account": "Account",
+      "billing": "Billing",
+      "notifications": "Notifications",
+      "logout": "Log out",
+      "criditDetail": "Credit Detail",
+      "backToHome": "Back to home",
+      "lightMode": "Light Mode",
+      "darkMode": "Dark Mode",
+      "systemMode": "System"
+    },
+    "mainMenu": {
+      "groupTitle": "Platform"
+    }
+  },
+  "accountProfile": {
+    "user": "User",
+    "account": "Account",
+    "editProfile": "Edit profile",
+    "sections": {
+      "overview": "Overview",
+      "subscription": "Subscription",
+      "security": "Security",
+      "activity": "Activity",
+      "preferences": "Preferences"
+    },
+    "basicInfo": {
+      "title": "Basic information",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "joinedAt": "Joined"
+    },
+    "usage": {
+      "title": "Usage",
+      "storage": "Storage",
+      "manage": "Manage"
+    },
+    "subscription": {
+      "title": "Subscription",
+      "plan": "Plan",
+      "renews": "Renews",
+      "upgrade": "Upgrade plan",
+      "cancel": "Cancel plan"
+    },
+    "security": {
+      "title": "Security",
+      "twoFA": "Two‑factor authentication",
+      "manage2fa": "Manage 2FA"
+    },
+    "sessions": {
+      "title": "Active sessions",
+      "signOutAll": "Sign out all"
+    },
+    "activity": {
+      "title": "Activity",
+      "placeholder": "No recent activity."
+    },
+    "preferences": {
+      "title": "Preferences",
+      "language": "Language",
+      "theme": "Theme",
+      "themeAuto": "Auto",
+      "edit": "Edit preferences"
+    },
+    "common": {
+      "enabled": "Enabled",
+      "disabled": "Disabled"
+    }
+  },
+  "billingProfile": {
+    "user": "User",
+    "billing": "Billing",
+    "sections": {
+      "paymentMethods": "Payment methods",
+      "invoices": "Invoices"
+    },
+    "primary": "Primary",
+    "expires": "Expires",
+    "setPrimary": "Set as primary",
+    "remove": "Remove",
+    "addPaymentMethod": "Add payment method",
+    "invoiceHistory": "Invoice history",
+    "invoice": "Invoice",
+    "date": "Date",
+    "amount": "Amount",
+    "status": "Status",
+    "action": "Action",
+    "download": "Download",
+    "paid": "Paid",
+    "open": "Open",
+    "overdue": "Overdue"
+  },
+  "creditsDetail": {
+    "user": "User",
+    "credits": "Credits",
+    "sections": {
+      "summary": "Summary",
+      "transactions": "Transactions"
+    },
+    "currentCredits": "Current credits",
+    "creditsAvailable": "Available credits",
+    "redeem": "Redeem",
+    "transactionHistory": "Transaction history",
+    "date": "Date",
+    "description": "Description"
+  },
+  "pricing_plan": {
+    "billing": {
+      "title": "Billing"
+    },
+    "pricing": {
+      "title": "Upgrade Plan"
+    }
+  }
+}
