@@ -141,7 +141,7 @@ export default function Header() {
             <Link href={process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/saammat/ShipStack"} target="_blank" className="hover:text-primary">
               <Image src="/icons/github.svg" alt="GitHub" width={24} height={24} className="dark:invert dark:brightness-0 dark:hover:opacity-80 hover:opacity-70 transition-opacity" />
             </Link>
-            <Link href="https://discord.com/invite/your-invite" target="_blank" className="hover:text-primary">
+            <Link href="https://discord.com" target="_blank" className="hover:text-primary">
               <Image src="/icons/discord.svg" alt="Discord" width={24} height={24} className="dark:invert dark:brightness-0 dark:hover:opacity-80 hover:opacity-70 transition-opacity" />
             </Link>
           </div>
