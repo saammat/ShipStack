@@ -6,6 +6,7 @@ import { MoveRight, BookOpen, Rocket } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 // const words = ["build", "deploy", "scale", "optimize"];
 
@@ -61,9 +62,11 @@ export const Hero = () => {
           {t("description.line3")}
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Button size="lg" className="gap-2 font-medium transition-all duration-200">
-            {t("buttons.start")} <MoveRight className="h-4 w-4" />
-          </Button>
+          <Link href={process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/saammat/ShipStack"} target="_blank">
+            <Button size="lg" className="gap-2 font-medium transition-all duration-200">
+              {t("buttons.start")} <MoveRight className="h-4 w-4" />
+            </Button>
+          </Link>
           <Button variant="outline" size="lg" className="gap-2 font-medium transition-all duration-200">
             {t("buttons.demo")} <Rocket className="h-4 w-4" />
           </Button>
