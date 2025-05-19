@@ -43,41 +43,47 @@
     "footer": "ShipStack 构建于前人的伟大成果之上"
   },
   "features": {
+    "badge": "ShipStack 特性",
     "heading": {
       "prefix": "只为",
       "highlight": "超速增长"
     },
+    "subtitle": "ShipStack内置了现代化SaaS应用所有的核心组件及功能，让您更加专注业务逻辑与增长，加速您的SaaS应用落地。",
     "modularByDesign": {
       "title": "模块化设计",
-      "description": "通过可复用的积木块构建生产级 SaaS 应用，加速交付，无需从零开始。"
+      "description": "通过模块化的可复用组件块，快速构建生产级 SaaS 应用。每个模块都独立可组合，覆盖认证、计费、部署等核心功能，加速交付，无需从零开始。"
+    },
+    "aiPower": {
+      "title": "AI驱动",
+      "description": "原生支持 AI 能力集成，兼容 OpenAI、Claude 等主流大模型，可用于构建智能助手、推荐系统与自动化流程。开箱即用，也支持完全自定义扩展。"
     },
     "prebuiltAuth": {
-      "title": "预设认证与安全",
-      "description": "OAuth、magic-link、RBAC 一应俱全，专注功能开发，省去用户流搭建。"
+      "title": "登录认证系统",
+      "description": "内建 OAuth、Credentials 完整认证体系，支持开箱即用的Google、Github授权登录。令您专注业务开发，无需重复搭建登录与权限系统。"
     },
     "billing": {
       "title": "订阅与计费",
-      "description": "Stripe 驱动的订阅、发票和税务处理，开箱即用。"
+      "description": "内置 Stripe 订阅管理、发票开具与税务处理模块，支持多币种与区域化定价，自动处理续订与账单流程，帮助你轻松实现全球化 SaaS 收费体系，无需手动集成。"
     },
     "deployment": {
-      "title": "无缝部署",
-      "description": "与 Vercel 或其他平台的 CI/CD 集成，实现零阻碍发布。"
+      "title": "极速部署",
+      "description": "开箱即用的部署模块，原生集成 Vercel 与主流平台的 CI/CD 流程，实现代码变更自动发布。无需手动配置，一键部署，持续交付更轻松。"
     },
     "modernStack": {
       "title": "现代技术栈",
-      "description": "Next.js • Tailwind CSS • shadcn/ui — 默认即享一流开发者体验。"
+      "description": "内建现代前端技术栈：ChatGPT，Next.js，Tailwind CSS，shadcn/ui，Magic UI，默认即享最佳开发体验与设计一致性，无需额外配置。"
     },
     "extensible": {
       "title": "可定制与可扩展",
-      "description": "覆盖任何组件或 Hook，接入事件总线或引入自定义后端逻辑。"
+      "description": "支持完整的组件与 Hook 级覆盖，可接入事件总线、自定义 API 与后端逻辑，轻松实现业务定制与系统扩展，满足复杂场景需求。"
     },
     "globalFirst": {
       "title": "全球优先",
-      "description": "内置 next-intl 国际化、区域路由与语言切换，一键跨区部署。"
+      "description": "内置基于 next-intl 的国际化支持，集成区域化路由、语言切换与本地化资源管理，一键部署多语言版本，助力产品轻松走向全球。"
     },
     "docsSdk": {
       "title": "文档与 SDK",
-      "description": "详尽指南、示例代码及 SDK，助你分钟级上手。"
+      "description": "集成 Fumadocs 驱动的高质量文档系统，搭配丰富示例与官方 SDK，涵盖每一个模块使用细节，助你分钟级上手，加速开发全流程。"
     }
   },
   "usageFlow": {

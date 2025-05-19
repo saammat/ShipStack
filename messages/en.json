@@ -43,41 +43,47 @@
     "footer": "ShipStack is built on the shoulders of giants"
   },
   "features": {
+    "badge": "ShipStack features",
     "heading": {
       "prefix": "Crafted for ",
       "highlight": "hyper‑growth"
     },
+    "subtitle": "ShipStack has built-in all the core components and functions of modern SaaS applications, allowing you to focus more on business logic and growth and accelerate the implementation of your SaaS applications.",
     "modularByDesign": {
       "title": "Modular by Design",
-      "description": "Assemble production-grade SaaS apps from reusable building blocks. Ship faster without reinventing the wheel."
+      "description": "Build production-ready SaaS apps with modular, reusable blocks. Each module is composable and covers core features like auth, billing, and deployment—accelerating delivery without starting from scratch."
+    },
+    "aiPowered": {
+      "title": "AI-Powered",
+      "description": "AI-ready by design—seamlessly integrate with OpenAI, LangChain, and other leading frameworks. Build intelligent agents, recommendation engines, or automated workflows with ease, and extend freely as needed."
     },
     "prebuiltAuth": {
-      "title": "Prebuilt Auth & Security",
-      "description": "OAuth, magic‑link, RBAC—all set up for you. Focus on features, not user flows."
+      "title": "Authentication system",
+      "description": "Built-in OAuth, Credentials authentication systems, support out-of-the-box Google and Github authorized login. Let you focus on business development without having to repeatedly build login and permission systems."
     },
     "billing": {
       "title": "Subscription & Billing",
-      "description": "Stripe‑powered subscriptions, invoicing and tax handling—ready out of the box."
+      "description": "Built-in Stripe module for subscriptions, invoicing, and tax automation. Supports multi-currency pricing, regional tax rules, and seamless billing flows—ready to scale your SaaS business globally without custom integrations."
     },
     "deployment": {
       "title": "Seamless Deployment",
-      "description": "CI/CD integration with Vercel (or your platform of choice) for zero-hassle releases."
+      "description": "Instant deployment with built-in CI/CD integration for Vercel and other platforms. Ship changes automatically with zero config—streamlined delivery from code to production."
     },
     "modernStack": {
       "title": "Modern Tech Stack",
-      "description": "Next.js • Tailwind CSS • shadcn/ui—developer-friendly defaults with best-in-class DX."
+      "description": "Powered by a modern frontend stack — ChatGPT, Next.js, Tailwind CSS, shadcn/ui and Magic UI for an exceptional developer experience and consistent design, right out of the box."
     },
     "extensible": {
       "title": "Customizable & Extensible",
-      "description": "Override any component or hook, plug into our event bus or bring your own backend logic."
+      "description": "Fully customizable at the component and hook level—plug in event buses, custom APIs, or backend logic with ease. Built to adapt to complex, evolving product needs."
     },
     "globalFirst": {
       "title": "Global-First",
-      "description": "Built-in i18n with next-intl, locale-aware routing and a language switcher included."
+      "description": "Global-ready with built-in next-intl support—featuring localized routing, language switching, and content management. Deploy multilingual SaaS experiences effortlessly, anywhere in the world."
     },
     "docsSdk": {
       "title": "Comprehensive Docs & SDKs",
-      "description": "In-depth guides, code samples and SDKs to get you started in minutes."
+      "description": "Developer-ready documentation powered by Fumadocs, complete with detailed guides, code examples, and official SDKs. Everything you need to get started in minutes and build faster."
     }
   },
   "usageFlow": {
