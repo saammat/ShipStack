@@ -97,8 +97,8 @@ export const Features = () => {
         icon: Cpu,
       },
       {
-        title: t("aiPower.title"),
-        description: t("aiPower.description"),
+        title: t("aiPowered.title"),
+        description: t("aiPowered.description"),
         icon: Bot,
       },
       {
@@ -150,7 +150,7 @@ export const Features = () => {
           {t("badge")}
         </Badge>
       </div >
-      <h2 className="mt-4 mb-6 text-center text-5xl font-semibold tracking-tight md:text-5xl">
+      <h2 className="mt-6 mb-6 text-center text-5xl font-semibold tracking-tight md:text-5xl">
         {t("heading.prefix")}
         <span className="text-primary font-semibold">
           {t("heading.highlight")}
