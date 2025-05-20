@@ -9,7 +9,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useTranslations } from "next-intl";
-import { Safari } from "../magicui/safari";
 import { cn } from "@/lib/utils";
 
 interface FeatureItem {
