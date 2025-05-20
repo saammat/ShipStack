@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Download, Edit3, CloudUpload } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const steps = (t: any) => [

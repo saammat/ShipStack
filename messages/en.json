@@ -86,6 +86,20 @@
       "description": "Developer-ready documentation powered by Fumadocs, complete with detailed guides, code examples, and official SDKs. Everything you need to get started in minutes and build faster."
     }
   },
+  "features2": {
+    "heading": "ShipStack core application scenarios",
+    "description": "ShipStack helps you launch production-ready projects in minutes—whether it's content, tools, or full-featured platforms.",
+    "marketingLandingPage": "Marketing Landing Page",
+    "marketingLandingPageDescription": "Launch visually compelling landing pages with modular layouts, gradient backgrounds, interactive animations, and i18n support—perfect for product launches and marketing campaigns.",
+    "blogPlatform": "Blog Platform",
+    "blogPlatformDescription": "Includes markdown rendering, post management, tagging, full-text search, and multi-author support—ideal for tech blogs, editorial hubs, or dev communities.",
+    "aiPoweredSaaSTools": "AI-powered SaaS Tools",
+    "aiPoweredSaaSToolsDescription": "Easily build AI tools powered by OpenAI or LangChain with built-in subscriptions, usage tracking, and role control—great for AI writing, assistants, or retrieval systems.",
+    "curatedDirectorySite": "Curated Directory Site",
+    "curatedDirectorySiteDescription": "Quickly set up a curated directory with link cards, tag filters, theme toggles, and analytics—ideal for tool lists, resource hubs, or product directories.",
+    "membershipCommunity": "Membership Community",
+    "membershipCommunityDescription": "Built-in support for user login, access control, tiered permissions, and credit systems—ideal for paid communities, private groups, or online course platforms. Modular components let you launch gated content, memberships, and user engagement tools in no time."
+  },
   "usageFlow": {
     "heading": "How to Quickly Build SaaS with ShipStack",
     "description": "Accelerate your AI SaaS project through these steps",
