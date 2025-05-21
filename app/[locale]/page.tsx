@@ -19,8 +19,8 @@ export default function Home() {
       <Features />
       <Feature2 />
       <UsageFlow />
-      <Case />
-      <Stats />
+      {/* <Case /> */}
+      {/* <Stats /> */}
       <Pricing />
       <FAQ />
       <Footer />

@@ -109,8 +109,8 @@
     },
     "steps": [
       {
-        "title": "获取ShipStack",
-        "description": "在Github上下载ShipStack代码"
+        "title": "下载ShipStack源码",
+        "description": "从Github下载ShipStack代码"
       },
       {
         "title": "定制您的项目",

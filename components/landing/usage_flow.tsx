@@ -2,28 +2,31 @@
 
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
+import { useTheme } from "next-themes";
+import Image from 'next/image';
 
-const steps = (t: any) => [
+const steps = (t: any, theme: string) => [
   {
     title: t("steps.0.title"),
     description: t("steps.0.description"),
-    image: "/images/timeline/download.png",
+    image: `/images/timeline/download${theme === "dark" ? "-dark" : ""}.png`,
   },
   {
     title: t("steps.1.title"),
     description: t("steps.1.description"),
-    image: "/images/timeline/edit.png",
+    image: `/images/timeline/edit${theme === "dark" ? "-dark" : ""}.png`,
   },
   {
     title: t("steps.2.title"),
     description: t("steps.2.description"),
-    image: "/images/timeline/deploy.png",
+    image: `/images/timeline/deploy${theme === "dark" ? "-dark" : ""}.png`,
   },
 ];
 
 export const UsageFlow = () => {
   const t = useTranslations("usageFlow");
-  const localizedSteps = steps(t);
+  const { theme } = useTheme();
+  const localizedSteps = steps(t, theme || "light");
 
   return (
     <section className="py-32">
@@ -49,8 +52,10 @@ export const UsageFlow = () => {
           <div className="flex flex-col gap-12 md:gap-20">
             {localizedSteps.map((step, index) => (
               <div key={index} className="rounded-xl border p-2">
-                <img
+                <Image
                   src={step.image}
+                  width={1200}
+                  height={630}
                   alt={step.title}
                   className="aspect-video w-full rounded-xl border border-dashed object-cover"
                 />
