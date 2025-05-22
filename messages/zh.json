@@ -87,7 +87,8 @@
     }
   },
   "features2": {
-    "heading": "ShipStack核心应用场景",
+    "heading": "核心",
+    "headingHighlight": "应用场景",
     "description": "满足不同类型项目的核心构建需求，ShipStack 让你在几分钟内搭建出从内容展示到智能工具的完整产品形态。",
     "marketingLandingPage": "品牌落地页",
     "marketingLandingPageDescription": "快速构建具有视觉冲击力的品牌落地页，支持模块化布局、渐变背景、互动动画与国际化，适用于产品发布、营销推广等场景。",
@@ -101,8 +102,9 @@
     "membershipCommunityDescription": "支持用户登录、权限分级、内容访问控制与积分系统，适合搭建知识付费社区、私密圈子或在线课程平台。模块化组件帮助你快速实现会员管理、内容分发与互动功能。"
   },
   "usageFlow": {
-    "heading": "基于ShipStack快速构建SaaS服务",
-    "description": "通过下面几个步骤加速你的AI SaaS项目",
+    "heading": "SaaS服务",
+    "headingHighlight": "快速构建",
+    "description": "通过以下关键步骤，极速启动你的 AI SaaS 项目。从模板选择到在线部署，全流程模块化支持，助你在最短时间内构建、上线并迭代智能产品。",
     "buttons": {
       "primary": "立即开始",
       "secondary": "查看演示"

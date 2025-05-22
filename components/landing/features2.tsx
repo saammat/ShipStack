@@ -1,64 +1,76 @@
 "use client";
 
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
 interface FeatureItem {
   id: number;
   title: string;
-  image: string;
+  image: string; // will be overwritten
   description: string;
 }
 
-interface Feature197Props {
-  features: FeatureItem[];
-}
-
-const Feature2 = () => {
+export const Feature2 = () => {
   const t = useTranslations("features2");
-  const features: FeatureItem[] = [
+  const { theme } = useTheme();
+
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const getImagePath = (name: string) =>
+    `/images/features2/${name}${theme === "dark" ? "-dark" : ""}.png`;
+
+  const featureData = [
     {
       id: 1,
       title: t("marketingLandingPage"),
-      image: "/images/features2/SaaS.png",
-      description: t("marketingLandingPageDescription")
+      imageName: "saas",
+      description: t("marketingLandingPageDescription"),
     },
     {
       id: 2,
       title: t("blogPlatform"),
-      image: "/images/features2/SaaS.png",
-      description: t("blogPlatformDescription")
+      imageName: "saas",
+      description: t("blogPlatformDescription"),
     },
     {
       id: 3,
       title: t("aiPoweredSaaSTools"),
-      image: "/images/features2/SaaS.png",
-      description: t("aiPoweredSaaSToolsDescription")
+      imageName: "saas",
+      description: t("aiPoweredSaaSToolsDescription"),
     },
     {
       id: 4,
       title: t("curatedDirectorySite"),
-      image: "/images/features2/SaaS.png",
-      description: t("curatedDirectorySiteDescription")
+      imageName: "saas",
+      description: t("curatedDirectorySiteDescription"),
     },
     {
       id: 5,
       title: t("membershipCommunity"),
-      image: "/images/features2/SaaS.png",
-      description: t("membershipCommunityDescription")
+      imageName: "saas",
+      description: t("membershipCommunityDescription"),
     },
   ];
 
   const [activeTabId, setActiveTabId] = useState<number | null>(1);
-  const [activeImage, setActiveImage] = useState(features[0].image);
+
+  const activeImage =
+    mounted && activeTabId
+      ? getImagePath(featureData.find((f) => f.id === activeTabId)?.imageName || "SaaS")
+      : "";
+
+  if (!mounted) return null;
 
   return (
     <section className="py-32">
@@ -67,16 +79,18 @@ const Feature2 = () => {
           <div className="w-full md:w-1/2">
             <h2 className="mt-4 mb-6 text-5xl font-semibold md:text-5xl">
               {t("heading")}
+              <span className="text-primary font-semibold">
+                {t("headingHighlight")}
+              </span>
             </h2>
             <p className="mb-10 font-medium text-muted-foreground md:text-xl">
               {t("description")}
             </p>
             <Accordion type="single" className="w-full" defaultValue="item-1">
-              {features.map((tab) => (
+              {featureData.map((tab) => (
                 <AccordionItem key={tab.id} value={`item-${tab.id}`}>
                   <AccordionTrigger
                     onClick={() => {
-                      setActiveImage(tab.image);
                       setActiveTabId(tab.id);
                     }}
                     className="cursor-pointer py-5 !no-underline transition"
@@ -93,7 +107,7 @@ const Feature2 = () => {
                     </p>
                     <div className="mt-4 md:hidden">
                       <img
-                        src={tab.image}
+                        src={getImagePath(tab.imageName)}
                         alt={tab.title}
                         className="h-full max-h-80 w-full rounded-md object-cover"
                       />
@@ -103,6 +117,7 @@ const Feature2 = () => {
               ))}
             </Accordion>
           </div>
+
           <div className="relative m-auto hidden w-1/2 overflow-hidden rounded-2xl border border-muted-foreground/20 bg-muted shadow-xl transition-shadow hover:shadow-2xl md:block">
             <div
               className={cn(
@@ -128,11 +143,13 @@ const Feature2 = () => {
                   "hover:before:opacity-100"
                 )}
               >
-                <img
-                  src={activeImage}
-                  alt="Feature preview"
-                  className="w-full h-full object-cover rounded-xl"
-                />
+                {activeImage && (
+                  <img
+                    src={activeImage}
+                    alt="Feature preview"
+                    className="w-full h-full object-cover rounded-xl"
+                  />
+                )}
               </div>
             </div>
           </div>
@@ -142,5 +159,3 @@ const Feature2 = () => {
     </section>
   );
 };
-
-export { Feature2 };
