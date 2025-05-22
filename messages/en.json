@@ -182,54 +182,54 @@
     "session": "Average session length (sec)"
   },
   "pricing": {
-    "badge": "Pricing",
-    "heading": "Plans that scale with you",
-    "subheading": "Switch anytime. No hidden fees.",
+    "badge": "Flexible Plans",
+    "heading": "Choose the right plan",
+    "subheading": "Whether you're just starting out or scaling to enterprise, we’ve got you covered.",
     "monthly": "Monthly",
     "yearly": "Yearly",
-    "save": "Save 20%",
-    "popular": "Most popular",
-    "description": {
-      "starter": "Essential tools to get you started.",
-      "growth": "Everything in Starter, plus tools to grow faster.",
-      "enterprise": "Everything in Growth, plus enterprise-grade support and scale."
-    },
+    "save": "save 20%",
+    "popular": "Most Popular",
     "unit": {
-      "month": "mo",
-      "year": "yr"
+      "month": "month",
+      "year": "year"
+    },
+    "description": {
+      "free": "A fully-featured open-source Next.js SaaS starter template.",
+      "pro": "A premium SaaS template for professional teams.",
+      "enterprise": "A custom solution for enterprises."
     },
     "cta": {
-      "starter": "Start free",
-      "growth": "Go growth",
-      "enterprise": "Contact sales"
+      "free": "Get Free",
+      "pro": "Upgrade to Plus",
+      "enterprise": "Contact Us"
     },
     "features": {
-      "starter": {
-        "projects": "3 projects",
-        "api": "10k API calls",
-        "support": "Community support",
-        "analytics": "Basic analytics",
-        "notifications": "Email notifications"
+      "free": {
+        "source": "Deployable SaaS source code",
+        "i18n": "Internationalization",
+        "auth": "Auth system",
+        "payment": "Stripe payment integration",
+        "database": "Database storage",
+        "admin": "Admin dashboard"
       },
-      "growth": {
-        "projects": "Unlimited projects",
-        "api": "500k API calls",
-        "support": "Email support",
-        "team": "Team collaboration",
-        "domains": "Custom domains",
-        "dashboard": "Analytics dashboard",
-        "webhooks": "Webhook integrations"
+      "pro": {
+        "allStarter": "All Starter features",
+        "ai": "AI integration",
+        "email": "Email newsletter",
+        "analytics": "Analytics & Ads",
+        "vercel": "One-click Vercel deploy",
+        "blog": "Local MDX blog",
+        "docs": "Docs hosting",
+        "license": "Lifetime license",
+        "support": "24/7 Email support"
       },
       "enterprise": {
-        "limits": "Custom limits",
-        "cluster": "Dedicated cluster",
-        "priority": "24/7 priority support",
-        "uptime": "99.9% Uptime SLA",
-        "onboarding": "Onboarding assistance",
-        "integrations": "Custom integrations",
-        "access": "Role-based access"
+        "allGrowth": "All Plus features",
+        "1on1": "1-on-1 support",
+        "custom": "Custom development"
       }
-    }
+    },
+    "contactForPricing": "Contact for pricing"
   },
   "faq": {
     "title": "Frequently asked questions",
