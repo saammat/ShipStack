@@ -110,15 +110,15 @@
     "steps": [
       {
         "title": "下载ShipStack源码",
-        "description": "从Github下载ShipStack代码"
+        "description": "立即从 GitHub 获取 ShipStack 源码，探索模块化架构实现，打造专属于你的高质量 SaaS 应用。"
       },
       {
         "title": "定制您的项目",
-        "description": "根据项目特征修改模板文件，满足您的功能需求"
+        "description": "在 VS Code 中根据实际业务需求轻松修改模板文件，灵活调整组件结构、样式与逻辑，实现从设计到功能的全面定制，精准匹配您的产品特性。"
       },
       {
         "title": "部署到生产环境",
-        "description": "通过几次点击，您的项目就可以生产使用"
+        "description": "通过几次点击即可将项目部署到 Vercel，自动配置域名、HTTPS 和 CI/CD 流程，无需复杂设置，立即上线可用。支持预览环境与版本回滚，助你更快交付、持续迭代。"
       }
     ]
   },

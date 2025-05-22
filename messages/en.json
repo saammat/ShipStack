@@ -109,16 +109,16 @@
     },
     "steps": [
       {
-        "title": "Get ShipStack",
-        "description": "Download ShipStack source code from GitHub"
+        "title": "Download ShipStack Source Code",
+        "description": "Get the ShipStack codebase from GitHub, explore its modular architecture, and build a high-quality SaaS product tailored to your vision."
       },
       {
         "title": "Customize Your Project",
-        "description": "Modify templates to fit your features"
+        "description": "Easily modify template files in VS Code to fit your business needs—adjust components, styles, and logic with flexibility, enabling full customization from design to functionality."
       },
       {
         "title": "Deploy to Production",
-        "description": "A few clicks and your project is live"
+        "description": "Launch your project on Vercel in just a few clicks—complete with automatic domain setup, HTTPS, and CI/CD. No complex configuration needed. Preview changes, roll back versions, and ship faster with confidence."
       }
     ]
   },
