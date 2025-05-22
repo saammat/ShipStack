@@ -41,7 +41,7 @@ export const UsageFlow = () => {
             </p>
             <div className="mt-8 flex flex-col gap-4 lg:flex-row">
               <Button className="gap-2" size="lg" asChild>
-                <a href="#">{t("buttons.primary")}</a>
+                <a href={ process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/saammat/ShipStack" } target="_blank">{t("buttons.primary")}</a>
               </Button>
               <Button variant="outline" size="lg" className="gap-2" asChild>
                 <a href="#">{t("buttons.secondary")}</a>

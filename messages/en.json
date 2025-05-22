@@ -101,7 +101,7 @@
     "membershipCommunityDescription": "Built-in support for user login, access control, tiered permissions, and credit systems—ideal for paid communities, private groups, or online course platforms. Modular components let you launch gated content, memberships, and user engagement tools in no time."
   },
   "usageFlow": {
-    "heading": "How to Quickly Build SaaS with ShipStack",
+    "heading": "Quickly build SaaS services based on ShipStack",
     "description": "Accelerate your AI SaaS project through these steps",
     "buttons": {
       "primary": "Start Now",

@@ -101,7 +101,7 @@
     "membershipCommunityDescription": "支持用户登录、权限分级、内容访问控制与积分系统，适合搭建知识付费社区、私密圈子或在线课程平台。模块化组件帮助你快速实现会员管理、内容分发与互动功能。"
   },
   "usageFlow": {
-    "heading": "如何使用ShipStack快速构建SaaS服务",
+    "heading": "基于ShipStack快速构建SaaS服务",
     "description": "通过下面几个步骤加速你的AI SaaS项目",
     "buttons": {
       "primary": "立即开始",
