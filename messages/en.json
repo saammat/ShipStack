@@ -262,6 +262,13 @@
       }
     ]
   },
+  "cta": {
+    "title": "your Saas website construction",
+    "headingHighlight": "Speed ​​up ",
+    "subtitle": "Use our tools to build your SaaS faster — no cost to get started.",
+    "primary": "Get Started",
+    "secondary": "Learn More"
+  },
   "footer": {
     "description": "Managing a small business today is already tough. ShipStack makes building SaaS easier.",
     "terms": "Terms of Service",

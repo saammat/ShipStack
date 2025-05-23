@@ -262,6 +262,13 @@
       }
     ]
   },
+  "cta": {
+    "title": "您的 SaSS 网站",
+    "headingHighlight": "加速构建",
+    "subtitle": "使用我们的服务，更快构建 SaaS 网站，立即免费使用。",
+    "primary": "立即开始",
+    "secondary": "了解更多"
+  },
   "footer": {
     "description": "管理一家小型企业已经足够困难。ShipStack 让构建 SaaS 更加轻松。",
     "terms": "服务条款",

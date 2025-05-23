@@ -8,6 +8,7 @@ import { Case } from "@/components/landing/case";
 import { Stats } from "@/components/landing/stats";
 import { Pricing } from "@/components/landing/pricing";
 import { FAQ } from "@/components/landing/faq";
+import { CTA } from "@/components/landing/cta";
 import { Footer } from "@/components/landing/footer";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       {/* <Stats /> */}
       <Pricing />
       <FAQ />
+      <CTA />
       <Footer />
     </>
   );
