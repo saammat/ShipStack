@@ -38,7 +38,7 @@ export const FAQ = () => {
 
   return (
     <section ref={containerRef} className="relative w-full py-32 overflow-hidden">
-      <motion.div className="pointer-events-none absolute -inset-0 -z-10" style={{ background }} />
+      {/* <motion.div className="pointer-events-none absolute -inset-0 -z-10" style={{ background }} /> */}
 
       <div className="container mx-auto grid lg:grid-cols-2 gap-16 px-8">
         <div className="flex flex-col gap-8">

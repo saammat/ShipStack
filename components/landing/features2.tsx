@@ -96,7 +96,7 @@ export const Feature2 = () => {
                     className="cursor-pointer py-5 !no-underline transition"
                   >
                     <h6
-                      className={`text-lg font-semibold ${tab.id === activeTabId ? "text-foreground" : "text-muted-foreground"}`}
+                      className={`hover:text-primary transition-colors text-lg font-semibold ${tab.id === activeTabId ? "text-foreground" : "text-muted-foreground"}`}
                     >
                       {tab.title}
                     </h6>
