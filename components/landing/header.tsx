@@ -54,6 +54,13 @@ export default function Header() {
     });
   }
 
+  const scrollToSection = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div className="w-full bg-foreground text-background text-sm py-2 flex justify-center items-center gap-2">
@@ -67,9 +74,30 @@ export default function Header() {
               <Image src="/shipstack.png" alt="shipstack" width={32} height={32} className="dark:invert dark:brightness-0 dark:hover:opacity-80 hover:opacity-70 transition-opacity" />
               ShipStack
             </Link>
-            <Link href="#" className="text-sm font-medium hover:text-primary">{t("showcase")}</Link>
-            <Link href="#" className="text-sm font-medium hover:text-primary">{t("blocks")}</Link>
-            <Link href="#" className="text-sm font-medium hover:text-primary">{t("pricing")}</Link>
+            <Link href="#" className="text-sm font-medium hover:text-primary" onClick={
+              (e) => {
+                e.preventDefault();
+                scrollToSection("features");
+              }
+            }>
+              {t("features")}
+            </Link>
+            <Link href="#" className="text-sm font-medium hover:text-primary" onClick={
+              (e) => {
+                e.preventDefault();
+                scrollToSection("features2");
+              }
+            }>
+              {t("cases")}
+            </Link>
+            <Link href="#" className="text-sm font-medium hover:text-primary" onClick={
+              (e) => {
+                e.preventDefault();
+                scrollToSection("pricing");
+              }
+            }>
+              {t("pricing")}
+            </Link>
             <Link href="#" className="text-sm font-medium hover:text-primary">{t("docs")}</Link>
             <Link href="#" className="text-sm font-medium hover:text-primary">{t("blog")}</Link>
           </div>

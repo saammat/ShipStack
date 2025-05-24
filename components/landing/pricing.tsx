@@ -116,7 +116,7 @@ export const Pricing = () => {
   };
 
   return (
-    <section className="bg-background text-foreground py-40 px-8">
+    <section id="pricing" className="bg-background text-foreground py-40 px-8">
       <div className="mx-auto max-w-3xl text-center mb-16">
         <Badge variant="outline" className="px-2 py-1 text-xs uppercase tracking-widest">
           {t("badge")}

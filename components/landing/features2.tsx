@@ -73,7 +73,7 @@ export const Feature2 = () => {
   if (!mounted) return null;
 
   return (
-    <section className="py-32">
+    <section id="features2" className="py-32">
       <div className="container mx-auto">
         <div className="mb-12 flex w-full items-start justify-between gap-12">
           <div className="w-full md:w-1/2">

@@ -142,7 +142,7 @@ export const Features = () => {
 
 
   return (
-    <section className="relative mx-auto max-w-[90rem] px-8 py-40">
+    <section id="features" className="relative mx-auto max-w-[90rem] px-8 py-40">
       {/* <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,_rgba(120,120,255,0.08),_transparent_60%)] dark:bg-[radial-gradient(circle_at_center,_rgba(120,120,255,0.14),_transparent_60%)]" /> */}
       
       <div className="text-center">
