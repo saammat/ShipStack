@@ -41,7 +41,7 @@ const socialLinks = [
 
 const legalLinks = [
   { nameKey: "terms", href: "#" },
-  { nameKey: "privacyPolicy", href: "#" }
+  { nameKey: "privacyPolicy", href: "/privacy-policy" }
 ];
 
 export const Footer = () => {
