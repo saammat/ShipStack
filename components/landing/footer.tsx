@@ -1,78 +1,118 @@
 "use client";
-
-import Link from "next/link";
+import React from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { cn } from "@/lib/utils";
+
+const sections = [
+  {
+    titleKey: "product",
+    links: [
+      { nameKey: "overview", href: "#" },
+      { nameKey: "pricing", href: "#" },
+      { nameKey: "marketplace", href: "#" },
+      { nameKey: "features", href: "#" }
+    ]
+  },
+  {
+    titleKey: "company",
+    links: [
+      { nameKey: "about", href: "#" },
+      { nameKey: "team", href: "#" },
+      { nameKey: "blog", href: "#" },
+      { nameKey: "careers", href: "#" }
+    ]
+  },
+  {
+    titleKey: "resources",
+    links: [
+      { nameKey: "help", href: "#" },
+      { nameKey: "sales", href: "#" },
+      { nameKey: "advertise", href: "#" },
+      { nameKey: "privacy", href: "#" }
+    ]
+  }
+];
+
+const socialLinks = [
+  { icon: "/icons/instagram.svg", href: "#", label: "Instagram" },
+  { icon: "/icons/facebook.svg", href: "#", label: "Facebook" },
+  { icon: "/icons/x.svg", href: "#", label: "X" }
+];
+
+const legalLinks = [
+  { nameKey: "terms", href: "#" },
+  { nameKey: "privacyPolicy", href: "#" }
+];
 
 export const Footer = () => {
   const t = useTranslations("footer");
 
-  const navigationItems = [
-    {
-      title: t("nav.home.title"),
-      href: "/",
-      items: [],
-    },
-    {
-      title: t("nav.product.title"),
-      items: [
-        { title: t("nav.product.reports"), href: "/reports" },
-        { title: t("nav.product.statistics"), href: "/statistics" },
-        { title: t("nav.product.dashboards"), href: "/dashboards" },
-        { title: t("nav.product.recordings"), href: "/recordings" },
-      ],
-    },
-    {
-      title: t("nav.company.title"),
-      items: [
-        { title: t("nav.company.about"), href: "/about" },
-        { title: t("nav.company.fundraising"), href: "/fundraising" },
-        { title: t("nav.company.investors"), href: "/investors" },
-        { title: t("nav.company.contact"), href: "/contact" },
-      ],
-    },
-  ];
-
   return (
-    <footer className="relative w-full bg-foreground text-background py-24 overflow-hidden">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.05),_transparent_70%)]" />
+    <footer className={"relative bg-foreground text-background dark:bg-foreground dark:text-background py-20 md:py-32"}>
+      <div className="container mx-auto">
+        <div className="flex w-full flex-col justify-between gap-10 lg:flex-row lg:items-start lg:text-left">
+          {/* Logo与描述 */}
+          <div className="flex w-full flex-col gap-6 lg:items-start">
+            <div className="flex items-center gap-2 lg:justify-start">
+              <a href="/">
+                <Image
+                  src="/shipstack.png"
+                  alt="ShipStack"
+                  width={36}
+                  height={36}
+                  className="rounded-md invert dark:invert-0 transition-opacity hover:opacity-70 dark:hover:opacity-80"
+                />
+              </a>
+              <span className="text-xl font-semibold">ShipStack</span>
+            </div>
 
-      <div className="container mx-auto grid lg:grid-cols-2 gap-16 px-8">
-        <div className="flex flex-col gap-8">
-          <div className="flex items-center gap-3">
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">ShipStack™</h2>
+            <p className="max-w-[70%] text-sm">
+              {t("description")}
+            </p>
+
+            <ul className="flex items-center space-x-6">
+              {socialLinks.map((social, idx) => (
+                <li key={idx} className="hover:text-primary transition-colors">
+                  <a href={social.href} aria-label={social.label}>
+                    <Image
+                      src={social.icon}
+                      alt={social.label}
+                      width={24}
+                      height={24}
+                      className="size-5 invert dark:invert-0"
+                    />
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
-          <p className="text-lg max-w-lg leading-relaxed">
-            {t("description")}
-          </p>
-          <div className="flex flex-wrap gap-10">
-            <div className="text-sm space-y-1">
-              <p>{t("address.line1")}</p>
-              <p>{t("address.line2")}</p>
-              <p>{t("address.line3")}</p>
-            </div>
-            <div className="text-sm space-y-1">
-              <Link href="/terms" className="hover:text-primary">{t("terms")}</Link>
-              <Link href="/privacy" className="hover:text-primary">{t("privacy")}</Link>
-            </div>
+          {/* 菜单区块 */}
+          <div className="grid w-full gap-8 md:grid-cols-3 lg:gap-16">
+            {sections.map((section, sectionIdx) => (
+              <div key={sectionIdx}>
+                <h3 className="mb-4 font-bold">{t(section.titleKey)}</h3>
+                <ul className="space-y-3 text-sm">
+                  {section.links.map((link, linkIdx) => (
+                    <li key={linkIdx} className="hover:text-primary">
+                      <a href={link.href}>{t(link.nameKey)}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
-
-        <div className="grid lg:grid-cols-3 gap-10">
-          {navigationItems.map((item) => (
-            <div key={item.title} className="flex flex-col gap-2">
-              <h3 className="text-xl font-medium">{item.title}</h3>
-              {item.items.map((sub) => (
-                <Link
-                  key={sub.title}
-                  href={sub.href}
-                  className="text-sm hover:text-primary transition-colors"
-                >
-                  {sub.title}
-                </Link>
-              ))}
-            </div>
-          ))}
+        {/* 法律与版权 */}
+        <div className="mt-8 flex flex-col justify-between gap-4 border-t py-8 text-xs font-medium md:flex-row md:items-center md:text-left">
+          <p className="order-2 lg:order-1">{t("copyright")}</p>
+          <ul className="order-1 flex flex-col gap-2 md:order-2 md:flex-row">
+            {legalLinks.map((link, idx) => (
+              <li key={idx} className="hover:text-primary">
+                <a href={link.href}>{t(link.nameKey)}</a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </footer>

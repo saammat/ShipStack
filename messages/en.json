@@ -270,33 +270,25 @@
     "secondary": "Learn More"
   },
   "footer": {
-    "description": "Managing a small business today is already tough. ShipStack makes building SaaS easier.",
-    "terms": "Terms of Service",
-    "privacy": "Privacy Policy",
-    "address": {
-      "line1": "1 Tailwind Way",
-      "line2": "Menlo Park",
-      "line3": "CA 94025"
-    },
-    "nav": {
-      "home": {
-        "title": "Home"
-      },
-      "product": {
-        "title": "Product",
-        "reports": "Reports",
-        "statistics": "Statistics",
-        "dashboards": "Dashboards",
-        "recordings": "Recordings"
-      },
-      "company": {
-        "title": "Company",
-        "about": "About us",
-        "fundraising": "Fundraising",
-        "investors": "Investors",
-        "contact": "Contact us"
-      }
-    }
+    "product": "Product",
+    "company": "Company",
+    "resources": "Resources",
+    "overview": "Overview",
+    "pricing": "Pricing",
+    "marketplace": "Marketplace",
+    "features": "Features",
+    "about": "About",
+    "team": "Team",
+    "blog": "Blog",
+    "careers": "Careers",
+    "help": "Help",
+    "sales": "Sales",
+    "advertise": "Advertise",
+    "privacy": "Privacy",
+    "description": "A collection of components for your startup business or side project.",
+    "copyright": "© 2025 ShipStack. All rights reserved.",
+    "terms": "Terms and Conditions",
+    "privacyPolicy": "Privacy Policy"
   },
   "signin": {
     "welcomeBack": "Welcome back",

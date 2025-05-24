@@ -270,33 +270,25 @@
     "secondary": "了解更多"
   },
   "footer": {
-    "description": "管理一家小型企业已经足够困难。ShipStack 让构建 SaaS 更加轻松。",
-    "terms": "服务条款",
+    "product": "产品",
+    "company": "公司",
+    "resources": "资源",
+    "overview": "产品概览",
+    "pricing": "价格",
+    "marketplace": "市场",
+    "features": "功能",
+    "about": "关于我们",
+    "team": "团队",
+    "blog": "博客",
+    "careers": "招聘",
+    "help": "帮助中心",
+    "sales": "商务合作",
+    "advertise": "广告投放",
     "privacy": "隐私政策",
-    "address": {
-      "line1": "塔尔温大道 1 号",
-      "line2": "门洛帕克",
-      "line3": "加州 94025"
-    },
-    "nav": {
-      "home": {
-        "title": "首页"
-      },
-      "product": {
-        "title": "产品",
-        "reports": "报表",
-        "statistics": "统计",
-        "dashboards": "仪表盘",
-        "recordings": "录音"
-      },
-      "company": {
-        "title": "公司",
-        "about": "关于我们",
-        "fundraising": "融资信息",
-        "investors": "投资者",
-        "contact": "联系我们"
-      }
-    }
+    "description": "为你的创业项目或副业精选的高质量组件合集，快速助力产品上线。",
+    "copyright": "© 2025 ShipStack。保留所有权利。",
+    "terms": "服务条款",
+    "privacyPolicy": "隐私政策"
   },
   "signin": {
     "welcomeBack": "欢迎回来",
