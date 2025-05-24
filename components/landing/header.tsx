@@ -98,7 +98,7 @@ export default function Header() {
             }>
               {t("pricing")}
             </Link>
-            <Link href="#" className="text-sm font-medium hover:text-primary">{t("docs")}</Link>
+            <Link href="/docs" className="text-sm font-medium hover:text-primary">{t("docs")}</Link>
             <Link href="#" className="text-sm font-medium hover:text-primary">{t("blog")}</Link>
           </div>
           <div className="flex items-center space-x-4">
