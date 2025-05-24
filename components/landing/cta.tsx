@@ -12,16 +12,16 @@ export const CTA = () => {
       <Ripple />
       {/* 正文 */}
       <div className="mx-auto max-w-3xl text-center">
-        <h2 className="mt-4 mb-6 text-5xl font-semibold tracking-tight text-foreground md:text-5xl">
+        <h2 className="mt-6 mb-6 text-5xl font-semibold tracking-tight md:text-5xl">
           <span className="text-primary font-semibold">
             {t("headingHighlight")}
           </span>
           {t("title")}
         </h2>
-        
-        <p className="mb-10 font-medium text-muted-foreground md:text-xl">
+        <p className="mb-14 font-medium text-muted-foreground md:text-xl">
           {t("subtitle")}
         </p>
+
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a
             href={process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/saammat/ShipStack"}

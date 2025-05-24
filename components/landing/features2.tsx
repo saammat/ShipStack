@@ -77,7 +77,8 @@ export const Feature2 = () => {
       <div className="container mx-auto">
         <div className="mb-12 flex w-full items-start justify-between gap-12">
           <div className="w-full md:w-1/2">
-            <h2 className="mt-4 mb-6 text-5xl font-semibold md:text-5xl">
+            
+            <h2 className="mt-6 mb-6 text-5xl font-semibold tracking-tight md:text-5xl">
               {t("heading")}
               <span className="text-primary font-semibold">
                 {t("headingHighlight")}
@@ -86,6 +87,7 @@ export const Feature2 = () => {
             <p className="mb-10 font-medium text-muted-foreground md:text-xl">
               {t("description")}
             </p>
+            
             <Accordion type="single" className="w-full" defaultValue="item-1">
               {featureData.map((tab) => (
                 <AccordionItem key={tab.id} value={`item-${tab.id}`}>

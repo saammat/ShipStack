@@ -146,7 +146,7 @@ export const Features = () => {
       {/* <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,_rgba(120,120,255,0.08),_transparent_60%)] dark:bg-[radial-gradient(circle_at_center,_rgba(120,120,255,0.14),_transparent_60%)]" /> */}
       
       <div className="text-center">
-        <Badge variant="outline" className="px-2 py-1 text-xs tracking-widest">
+        <Badge variant="outline" className="px-2 py-1 text-xs uppercase tracking-widest">
           {t("badge")}
         </Badge>
       </div >

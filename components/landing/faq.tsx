@@ -38,15 +38,13 @@ export const FAQ = () => {
 
   return (
     <section ref={containerRef} className="relative w-full py-32 overflow-hidden">
-      {/* <motion.div className="pointer-events-none absolute -inset-0 -z-10" style={{ background }} /> */}
-
       <div className="container mx-auto grid lg:grid-cols-2 gap-16 px-8">
         <div className="flex flex-col gap-8">
           <Badge variant="outline" className="w-fit">FAQ</Badge>
-          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
+          <h2 className="text-5xl md:text-5xl font-semibold tracking-tight">
             {t("title")}
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
+          <p className="text-lg font-medium text-muted-foreground md:text-xl">
             {t("description")}
           </p>
           <Button variant="outline" className="gap-3 w-48">

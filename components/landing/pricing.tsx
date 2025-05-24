@@ -121,22 +121,12 @@ export const Pricing = () => {
         <Badge variant="outline" className="px-2 py-1 text-xs uppercase tracking-widest">
           {t("badge")}
         </Badge>
-        <h2 className="mt-4 text-5xl font-extrabold md:text-6xl tracking-tight">
+        <h2 className="mt-6 mb-6 text-5xl text-primary font-semibold md:text-5xl tracking-tight">
           {t("heading")}
         </h2>
-        <p className="mt-4 text-lg text-muted-foreground">
+        <p className="mb-20 font-medium text-muted-foreground md:text-xl">
           {t("subheading")}
         </p>
-        <div className="mt-6 inline-flex items-center gap-2 text-sm">
-          {/* <span>{t("monthly")}</span>
-          <Switch checked={annual} onCheckedChange={setAnnual} />
-          <span>
-            {t("yearly")}
-            <span className="ml-1 px-1.5 py-0.5 text-[10px] font-medium bg-primary text-primary-foreground rounded">
-              {t("save")}
-            </span>
-          </span> */}
-        </div>
       </div>
 
       <div className="mx-auto max-w-6xl grid gap-8 lg:grid-cols-3 items-stretch">

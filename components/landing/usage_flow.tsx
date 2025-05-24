@@ -33,7 +33,8 @@ export const UsageFlow = () => {
       <div className="mx-auto max-w-6xl px-4">
         <div className="relative grid gap-16 md:grid-cols-2">
           <div className="top-40 h-fit md:sticky">
-            <h2 className="mt-4 mb-6 text-5xl font-semibold md:text-5xl">
+            
+            <h2 className="mt-6 mb-6 text-5xl font-semibold md:text-5xl">
               <span className="text-primary font-semibold">
                 {t("headingHighlight")}
               </span>
@@ -42,6 +43,7 @@ export const UsageFlow = () => {
             <p className="font-medium text-muted-foreground md:text-xl">
               {t("description")}
             </p>
+
             <div className="mt-8 flex flex-col gap-4 lg:flex-row">
               <Button className="gap-2" size="lg" asChild>
                 <a href={ process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/saammat/ShipStack" } target="_blank">{t("buttons.primary")}</a>
