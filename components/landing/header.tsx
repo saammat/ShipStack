@@ -98,8 +98,8 @@ export default function Header() {
             }>
               {t("pricing")}
             </Link>
-            <Link href={`/docs/${locale}`} className="text-sm font-medium hover:text-primary">{t("docs")}</Link>
             <Link href='/blog' className="text-sm font-medium hover:text-primary">{t("blog")}</Link>
+            <Link href={`/docs/${locale}`} className="text-sm font-medium hover:text-primary">{t("docs")}</Link>
           </div>
           <div className="flex items-center space-x-4">
             <Select value={locale} onValueChange={(value) => onSelectChange(value as 'en' | 'zh')}>
