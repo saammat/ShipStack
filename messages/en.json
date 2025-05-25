@@ -541,5 +541,9 @@
     "contact": {
       "email": "By email: saammat1@gmail.com"
     }
+  },
+  "blog": {
+    "blog": "Blog",
+    "slogon": "Focus on your product, we’ll handle the rest."
   }
 }
