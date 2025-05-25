@@ -1,11 +1,11 @@
 'use client';
 
-import { SignUp1 } from "@/blocks/101_signup/signup1";
+import { SignUp } from "@/components/signup/signup";
 
 export default function SignInPage() {
   return (
     <>
-      <SignUp1 />
+      <SignUp />
     </>
   )
 }

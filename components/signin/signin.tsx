@@ -54,6 +54,7 @@ export const SignIn = () => {
             ShipStack
           </a>
         )}
+
         {/* 登录表单 */}
         <div className={cn("flex flex-col gap-6")}>
           <Card>
@@ -63,6 +64,7 @@ export const SignIn = () => {
             </CardHeader>
             <CardContent>
               <div className="grid gap-6">
+                
                 {/* 第三方登录 */}
                 <div className="flex flex-col gap-4">
                   {Object.values(providerMap).map((provider) => {
@@ -87,7 +89,7 @@ export const SignIn = () => {
 
                 {/* 分割线 */}
                 <div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border">
-                  <span className="relative z-10 bg-background px-2 text-muted-foreground">
+                  <span className="relative z-10 bg-card px-2 text-muted-foreground">
                     {t("orContinueWith")}
                   </span>
                 </div>
@@ -95,10 +97,12 @@ export const SignIn = () => {
                 <form>
                   {/* 账号密码登录 */}
                   <div className="grid gap-6">
+
                     <div className="grid gap-2">
                       <Label htmlFor="email">{t("email")}</Label>
-                      <Input id="email" type="email" placeholder="m@example.com" required />
+                      <Input id="email" type="email" placeholder="m@example.com" className="border-muted" required />
                     </div>
+
                     <div className="grid gap-2">
                       <div className="flex items-center">
                         <Label htmlFor="password">{t("password")}</Label>
@@ -106,8 +110,9 @@ export const SignIn = () => {
                           {t("forgotPassword")}
                         </a>
                       </div>
-                      <Input id="password" type="password" required />
+                      <Input id="password" type="password" className="border-muted" required />
                     </div>
+
                     <Button type="submit" className="w-full">
                       {t("login")}
                     </Button>
@@ -126,7 +131,7 @@ export const SignIn = () => {
             </CardContent>
           </Card>
           <div className="text-balance text-center text-xs text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 [&_a]:hover:text-primary">
-            {t("agreeTerms")} <a href="#">{t("terms")}</a> {t("and")} <a href="#">{t("privacy")}</a>.
+            {t("agreeTerms")} <a href="#">{t("terms")}</a> {t("and")} <a href="/privacy-policy">{t("privacy")}</a>.
           </div>
         </div>
       </div>
