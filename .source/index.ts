@@ -1,5 +1,9 @@
 // @ts-nocheck -- skip type checking
-import * as docs_0 from "../content/docs/index.mdx?collection=docs&hash=1748078532568"
+import * as docs_4 from "../content/docs/zh-documents/index2.mdx?collection=docs&hash=1748078532568"
+import * as docs_3 from "../content/docs/zh-documents/index.mdx?collection=docs&hash=1748078532568"
+import * as docs_2 from "../content/docs/en-documents/index3.mdx?collection=docs&hash=1748078532568"
+import * as docs_1 from "../content/docs/en-documents/index2.mdx?collection=docs&hash=1748078532568"
+import * as docs_0 from "../content/docs/en-documents/index.mdx?collection=docs&hash=1748078532568"
 import { _runtime } from "fumadocs-mdx"
 import * as _source from "../source.config"
-export const docs = _runtime.docs<typeof _source.docs>([{ info: {"path":"index.mdx","absolutePath":"/Users/xu/Documents/Code/Indie/ShipStack/content/docs/index.mdx"}, data: docs_0 }], [])
+export const docs = _runtime.docs<typeof _source.docs>([{ info: {"path":"en-documents/index.mdx","absolutePath":"/Users/xu/Documents/Code/Indie/ShipStack/content/docs/en-documents/index.mdx"}, data: docs_0 }, { info: {"path":"en-documents/index2.mdx","absolutePath":"/Users/xu/Documents/Code/Indie/ShipStack/content/docs/en-documents/index2.mdx"}, data: docs_1 }, { info: {"path":"en-documents/index3.mdx","absolutePath":"/Users/xu/Documents/Code/Indie/ShipStack/content/docs/en-documents/index3.mdx"}, data: docs_2 }, { info: {"path":"zh-documents/index.mdx","absolutePath":"/Users/xu/Documents/Code/Indie/ShipStack/content/docs/zh-documents/index.mdx"}, data: docs_3 }, { info: {"path":"zh-documents/index2.mdx","absolutePath":"/Users/xu/Documents/Code/Indie/ShipStack/content/docs/zh-documents/index2.mdx"}, data: docs_4 }], [{"info":{"path":"en-documents/meta.json","absolutePath":"/Users/xu/Documents/Code/Indie/ShipStack/content/docs/en-documents/meta.json"},"data":{"title":"English","description":"ShipStack English Document","root":true,"icon":"Building"}}, {"info":{"path":"zh-documents/meta.json","absolutePath":"/Users/xu/Documents/Code/Indie/ShipStack/content/docs/zh-documents/meta.json"},"data":{"title":"中文","description":"ShipStack 中文文档","root":true}}])

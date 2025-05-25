@@ -8,7 +8,6 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 import { SessionProvider } from "next-auth/react";
-import { RootProvider } from 'fumadocs-ui/provider';
 import "../globals.css";
 
 
@@ -55,19 +54,17 @@ export default async function RootLayout({
         >
           <NextIntlClientProvider locale={locale} messages={messages}>
             <SessionProvider>
-              <RootProvider>
-                <DotPattern
-                  width={40}
-                  height={40}
-                  cx={1}
-                  cy={1}
-                  cr={1}
-                  className={cn(
-                    "[mask-image:radial-gradient(800px_circle_at_center,white,transparent)]",
-                  )}
-                />
-                {children}
-              </RootProvider>
+              <DotPattern
+                width={40}
+                height={40}
+                cx={1}
+                cy={1}
+                cr={1}
+                className={cn(
+                  "[mask-image:radial-gradient(800px_circle_at_center,white,transparent)]",
+                )}
+              />
+              {children}
             </SessionProvider>
           </NextIntlClientProvider>
         </ThemeProvider>
