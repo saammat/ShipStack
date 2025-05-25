@@ -65,7 +65,6 @@ export const SignIn = () => {
             <CardContent>
               <div className="grid gap-6">
                 
-                {/* 第三方登录 */}
                 <div className="flex flex-col gap-4">
                   {Object.values(providerMap).map((provider) => {
                     let logoSrc = "";

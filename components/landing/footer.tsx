@@ -49,7 +49,6 @@ export const Footer = () => {
       <div className="container mx-auto">
         <div className="flex w-full flex-col justify-between gap-10 lg:flex-row lg:items-start lg:text-left">
           
-          {/* Logo与描述 */}
           <div className="flex w-full flex-col gap-6 lg:items-start">
             <div className="flex items-center gap-2 lg:justify-start">
               <a href="/">
@@ -85,7 +84,6 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* 菜单区块 */}
           <div className="grid w-full gap-8 md:grid-cols-3 lg:gap-16">
             {sections.map((section, sectionIdx) => (
               <div key={sectionIdx}>
@@ -107,7 +105,6 @@ export const Footer = () => {
           </div>
         </div>
         
-        {/* 法律与版权 */}
         <div className="mt-8 flex flex-col justify-between gap-4 border-t py-8 text-xs font-medium md:flex-row md:items-center md:text-left">
           <p className="order-2 lg:order-1">{t("copyright")}</p>
           <ul className="order-1 flex flex-col gap-2 md:order-2 md:flex-row">
