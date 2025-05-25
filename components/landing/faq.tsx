@@ -37,7 +37,7 @@ export const FAQ = () => {
   }, [mouseX, mouseY]);
 
   return (
-    <section ref={containerRef} className="relative w-full py-32 overflow-hidden">
+    <section id="faq" ref={containerRef} className="relative w-full py-32 overflow-hidden">
       <div className="container mx-auto grid lg:grid-cols-2 gap-16 px-8">
         <div className="flex flex-col gap-8">
           <Badge variant="outline" className="w-fit">FAQ</Badge>

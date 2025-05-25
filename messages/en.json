@@ -271,15 +271,26 @@
   },
   "footer": {
     "product": "Product",
-    "company": "Company",
+    "features": "Features",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    
+    "support": "Support",
+    "docs": "Docs",
+    "blog": "Blog",
+    "github": "GitHub Issues",
+
+    "language": "Language",
+    "english": "English",
+    "chinese": "简体中文",
+
     "resources": "Resources",
     "overview": "Overview",
-    "pricing": "Pricing",
-    "marketplace": "Marketplace",
-    "features": "Features",
+    
+    
     "about": "About",
     "team": "Team",
-    "blog": "Blog",
+    
     "careers": "Careers",
     "help": "Help",
     "sales": "Sales",

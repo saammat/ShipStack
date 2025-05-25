@@ -271,15 +271,29 @@
   },
   "footer": {
     "product": "产品",
-    "company": "公司",
+    "features": "功能特性",
+    "pricing": "价格",
+    "faq": "FAQ",
+    
+
+    "support": "支持",
+    "docs": "文档",
+    "blog": "博客",
+    "github": "GitHub Issues",
+
+    "language": "语言",
+    "english": "English",
+    "chinese": "简体中文",
+
+
     "resources": "资源",
     "overview": "产品概览",
-    "pricing": "价格",
-    "marketplace": "市场",
-    "features": "功能",
-    "about": "关于我们",
+    
+    
+    
+    "docs": "文档",
     "team": "团队",
-    "blog": "博客",
+    
     "careers": "招聘",
     "help": "帮助中心",
     "sales": "商务合作",

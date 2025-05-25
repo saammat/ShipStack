@@ -14,7 +14,7 @@ export const Hero = () => {
   const words = t.raw("typewriterWords") as string[];
 
   const locale = useLocale();
-  const docPath = locale === "zh" ? "/docs/zh-documents" : "/docs/en-documents";
+  const docPath = `/docs/${locale}`;
 
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);

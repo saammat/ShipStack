@@ -1,34 +1,30 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const sections = [
   {
     titleKey: "product",
     links: [
-      { nameKey: "overview", href: "#" },
-      { nameKey: "pricing", href: "#" },
-      { nameKey: "marketplace", href: "#" },
-      { nameKey: "features", href: "#" }
+      { nameKey: "features", id: "features", href: "" },
+      { nameKey: "pricing", id: "pricing", href: "" },
+      { nameKey: "faq", id: "faq", href: "" },
     ]
   },
   {
-    titleKey: "company",
+    titleKey: "support",
     links: [
-      { nameKey: "about", href: "#" },
-      { nameKey: "team", href: "#" },
-      { nameKey: "blog", href: "#" },
-      { nameKey: "careers", href: "#" }
+      { nameKey: "docs", id: "", href: "/docs" },
+      { nameKey: "blog", id: "", href: "/blog" },
+      { nameKey: "github", id: "", href: "https://github.com/saammat/ShipStack/issues" },
     ]
   },
-  {
-    titleKey: "resources",
+  { 
+    titleKey: "language",
     links: [
-      { nameKey: "help", href: "#" },
-      { nameKey: "sales", href: "#" },
-      { nameKey: "advertise", href: "#" },
-      { nameKey: "privacy", href: "#" }
+      { nameKey: "english", id: "", href: "/en" },
+      { nameKey: "chinese", id: "", href: "/zh" }
     ]
   }
 ];
@@ -46,11 +42,13 @@ const legalLinks = [
 
 export const Footer = () => {
   const t = useTranslations("footer");
+  const locale = useLocale(); 
 
   return (
     <footer className={"relative bg-foreground text-background dark:bg-foreground dark:text-background py-20 md:py-32"}>
       <div className="container mx-auto">
         <div className="flex w-full flex-col justify-between gap-10 lg:flex-row lg:items-start lg:text-left">
+          
           {/* Logo与描述 */}
           <div className="flex w-full flex-col gap-6 lg:items-start">
             <div className="flex items-center gap-2 lg:justify-start">
@@ -86,6 +84,7 @@ export const Footer = () => {
               ))}
             </ul>
           </div>
+
           {/* 菜单区块 */}
           <div className="grid w-full gap-8 md:grid-cols-3 lg:gap-16">
             {sections.map((section, sectionIdx) => (
@@ -94,7 +93,12 @@ export const Footer = () => {
                 <ul className="space-y-3 text-sm">
                   {section.links.map((link, linkIdx) => (
                     <li key={linkIdx} className="hover:text-primary">
-                      <a href={link.href}>{t(link.nameKey)}</a>
+                      {link.id && (
+                        <a href={`#${link.id}`}>{t(link.nameKey)}</a>
+                      )}
+                      {link.href && (
+                        <a href={link.href === '/docs' ? `/docs/${locale}`  : link.href}>{t(link.nameKey)}</a>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -102,6 +106,7 @@ export const Footer = () => {
             ))}
           </div>
         </div>
+        
         {/* 法律与版权 */}
         <div className="mt-8 flex flex-col justify-between gap-4 border-t py-8 text-xs font-medium md:flex-row md:items-center md:text-left">
           <p className="order-2 lg:order-1">{t("copyright")}</p>
