@@ -6,13 +6,13 @@ import { PrismaAdapter } from "@auth/prisma-adapter"
 // import { prisma } from "@/prisma/prisma"
 
 const providers: Provider[] = [
-  GitHub,
   Google(
     {
       clientId: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET
     }
-  )
+  ),
+  GitHub,
 ]
 
 export const providerMap = providers

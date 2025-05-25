@@ -88,14 +88,13 @@ export const SignIn = () => {
                 </div>
 
                 {/* 分割线 */}
-                <div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border">
+                {/* <div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border">
                   <span className="relative z-10 bg-card px-2 text-muted-foreground">
                     {t("orContinueWith")}
                   </span>
-                </div>
+                </div> */}
 
-                <form>
-                  {/* 账号密码登录 */}
+                {/* <form>
                   <div className="grid gap-6">
 
                     <div className="grid gap-2">
@@ -117,15 +116,15 @@ export const SignIn = () => {
                       {t("login")}
                     </Button>
                   </div>
-                </form>
+                </form> */}
 
                 {/* 注册 */}
-                <div className="text-center text-sm">
+                {/* <div className="text-center text-sm">
                   {t("noAccount")}{" "}
                   <a href="/sign-up" className="underline underline-offset-4">
                     {t("signUp")}
                   </a>
-                </div>
+                </div> */}
               </div>
 
             </CardContent>
