@@ -11,9 +11,13 @@ import { FAQ } from "@/components/landing/faq";
 import { CTA } from "@/components/landing/cta";
 import { Footer } from "@/components/landing/footer";
 
+import { DotPattern } from "@/components/magicui/dot-pattern";
+import { cn } from "@/lib/utils";
+
 export default function Home() {
   return (
     <>
+      <DotPattern width={40} height={40} cx={1} cy={1} cr={1} className={cn( "[mask-image:radial-gradient(800px_circle_at_center,white,transparent)]")}/>
       <Header />
       <Hero />
       <BaseFramework />

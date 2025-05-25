@@ -47,7 +47,6 @@ export default async function LocaleLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <NextIntlClientProvider locale={locale} messages={messages}>
             <SessionProvider>
-              <DotPattern width={40} height={40} cx={1} cy={1} cr={1} className={cn( "[mask-image:radial-gradient(800px_circle_at_center,white,transparent)]")}/>
               {children}
             </SessionProvider>
           </NextIntlClientProvider>
