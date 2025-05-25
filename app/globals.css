@@ -95,6 +95,9 @@
   --sidebar-border: hsl(0 0% 80%);
   --sidebar-ring: hsl(82 43% 57%);
   --radius: 0.5rem;
+
+  --en-documents-color: hsl(82 43% 57%);
+  --zh-documents-color: hsl(240 40% 50%);
 }
 
 .dark {
@@ -130,6 +133,9 @@
   --sidebar-accent-foreground: hsl(0 0% 100%);
   --sidebar-border: hsl(0 0% 50%);
   --sidebar-ring: hsl(82 43% 57%);
+
+  --en-documents-color: hsl(82 43% 57%);
+  --zh-documents-color: hsl(240 40% 80%);
 }
 
 @layer base {
