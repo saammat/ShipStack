@@ -6,25 +6,19 @@ import { BookIcon } from 'lucide-react';
 import Image from 'next/image';
 import { RootProvider } from 'fumadocs-ui/provider';
 
-const logo = (
-  <>
-    <Image
-      alt="ShipStack"
-      src="/shipstack.png"
-      width={24}
-      height={24}
-      sizes="100px"
-      className="dark:invert"
-      aria-label="Fumadocs"
-    />
-  </>
-);
-
 const baseOptions: BaseLayoutProps = {
   nav: {
     title: (
       <>
-        {logo}
+        <Image
+          alt="ShipStack"
+          src="/shipstack.png"
+          width={24}
+          height={24}
+          sizes="100px"
+          className="dark:invert"
+          aria-label="Fumadocs"
+        />
         <span className="font-medium [.uwu_&]:hidden [header_&]:text-[15px]">
           ShipStack
         </span>
