@@ -4,6 +4,7 @@ import { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
 import type { ReactNode } from 'react';
 import { BookIcon } from 'lucide-react';
 import Image from 'next/image';
+import { RootProvider } from 'fumadocs-ui/provider';
 
 const logo = (
   <>
@@ -46,10 +47,16 @@ const docsOptions: DocsLayoutProps = {
   tree: source.pageTree,
 };
 
-export default function Layout({ children }: { children: ReactNode }) {
+export default function DocumentsLayout({ children }: { children: ReactNode }) {
   return (
-    <DocsLayout {...docsOptions}>
-      {children}
-    </DocsLayout>
+    <html suppressHydrationWarning>
+      <body>
+        <RootProvider>
+          <DocsLayout {...docsOptions}>
+            {children}
+          </DocsLayout>
+        </RootProvider>
+      </body>
+    </html>
   );
 }

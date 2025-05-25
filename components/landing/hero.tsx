@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { MoveRight, BookOpen, Rocket } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 
 // const words = ["build", "deploy", "scale", "optimize"];
@@ -13,6 +13,9 @@ import Link from "next/link";
 export const Hero = () => {
   const t = useTranslations("hero");
   const words = t.raw("typewriterWords") as string[];
+
+  const locale = useLocale();
+  const docPath = locale === "zh" ? "/docs/zh-documents" : "/docs/en-documents";
 
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
@@ -70,9 +73,11 @@ export const Hero = () => {
           <Button variant="outline" size="lg" className="gap-2 font-medium transition-all duration-200">
             {t("buttons.demo")} <Rocket className="h-4 w-4" />
           </Button>
-          <Button variant="ghost" size="lg" className="gap-2 text-muted-foreground hover:text-foreground">
-            {t("buttons.docs")} <BookOpen className="h-4 w-4" />
-          </Button>
+          <Link href={docPath}>
+            <Button variant="ghost" size="lg" className="gap-2 text-muted-foreground hover:text-foreground">
+              {t("buttons.docs")} <BookOpen className="h-4 w-4" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
