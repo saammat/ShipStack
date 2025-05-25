@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/vitepress.css';
 @import 'fumadocs-ui/css/preset.css';
 
 @custom-variant dark (&:is(.dark *));
@@ -98,6 +98,7 @@
 
   --en-documents-color: hsl(82 43% 57%);
   --zh-documents-color: hsl(240 40% 50%);
+  --fd-layout-width: 1650px;
 }
 
 .dark {
