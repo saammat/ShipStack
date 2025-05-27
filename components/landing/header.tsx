@@ -54,12 +54,26 @@ export default function Header() {
     });
   }
 
-  const scrollToSection = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
+  const useScrollToSection = () => {
+    const router = useRouter();
+    const pathname = usePathname();
+  
+    const scrollToSection = (id: string) => {
+      if (pathname !== "/") {
+        // 先跳转到首页并传递 id 作为 hash
+        router.push(`/#${id}`);
+      } else {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    };
+  
+    return scrollToSection;
   };
+
+  const scrollToSection = useScrollToSection();
 
   return (
     <>
@@ -85,7 +99,7 @@ export default function Header() {
             <Link href="#" className="text-sm font-medium hover:text-primary" onClick={
               (e) => {
                 e.preventDefault();
-                scrollToSection("features2");
+                scrollToSection("cases");
               }
             }>
               {t("cases")}
