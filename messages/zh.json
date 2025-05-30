@@ -347,7 +347,7 @@
       "main": {
         "playground": {
           "title": "游乐场",
-          "history": "历史记录",
+          "chatbot": "ChatBot",
           "starred": "已加星",
           "settings": "设置"
         },

@@ -18,9 +18,16 @@ model User {
   sessions      Session[]
   // Optional for WebAuthn support
   Authenticator Authenticator[]
+  
+  // Optional for AI ChatBot
+  chats         Chat[]
+  Document      Document[]
+  Suggestion    Suggestion[]
  
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  @@map("User")
 }
  
 model Account {
@@ -76,4 +83,129 @@ model Authenticator {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
  
   @@id([userId, credentialID])
+}
+
+
+// ---------- AI ChatBot ----------
+// ---------- 枚举 ----------
+enum Visibility {
+  public
+  private
+}
+
+enum DocumentKind {
+  text
+  code
+  image
+  sheet
+}
+
+model Chat {
+  id         String       @id @default(uuid()) @db.Uuid
+  createdAt  DateTime     @db.Timestamp(6)
+  title      String       @db.Text
+  userId     String       @db.Uuid
+  visibility Visibility   @default(private)
+
+  user             User   @relation(fields: [userId], references: [id])
+  messagesDep      MessageDeprecated[]
+  messages         MessageV2[]
+  votesDep         VoteDeprecated[]
+  votes            Vote[]
+  streams          Stream[]
+
+  @@map("Chat")
+}
+
+model MessageDeprecated {
+  id        String   @id @default(uuid()) @db.Uuid
+  chatId    String   @db.Uuid
+  role      String   @db.VarChar
+  content   Json     @db.Json
+  createdAt DateTime @db.Timestamp(6)
+
+  chat   Chat             @relation(fields: [chatId], references: [id])
+  votes  VoteDeprecated[]
+
+  @@map("Message")
+}
+
+model MessageV2 {
+  id          String   @id @default(uuid()) @db.Uuid
+  chatId      String   @db.Uuid
+  role        String   @db.VarChar
+  parts       Json     @db.Json
+  attachments Json     @db.Json
+  createdAt   DateTime @db.Timestamp(6)
+
+  chat   Chat  @relation(fields: [chatId], references: [id])
+  votes  Vote[]
+
+  @@map("Message_v2")
+}
+
+model VoteDeprecated {
+  chatId    String @db.Uuid
+  messageId String @db.Uuid
+  isUpvoted Boolean
+
+  chat    Chat              @relation(fields: [chatId], references: [id])
+  message MessageDeprecated @relation(fields: [messageId], references: [id])
+
+  @@id([chatId, messageId])
+  @@map("Vote")
+}
+
+model Vote {
+  chatId    String @db.Uuid
+  messageId String @db.Uuid
+  isUpvoted Boolean
+
+  chat    Chat       @relation(fields: [chatId], references: [id])
+  message MessageV2  @relation(fields: [messageId], references: [id])
+
+  @@id([chatId, messageId])
+  @@map("Vote_v2")
+}
+
+model Document {
+  id        String        @db.Uuid
+  createdAt DateTime      @db.Timestamp(6)
+  title     String        @db.Text
+  content   String?       @db.Text
+  kind      DocumentKind  @default(text) @map("text")
+  userId    String        @db.Uuid
+
+  user         User         @relation(fields: [userId], references: [id])
+  suggestions  Suggestion[]
+
+  @@id([id, createdAt])
+  @@map("Document")
+}
+
+model Suggestion {
+  id                 String   @id @default(uuid()) @db.Uuid
+  documentId         String   @db.Uuid
+  documentCreatedAt  DateTime @db.Timestamp(6)
+  originalText       String   @db.Text
+  suggestedText      String   @db.Text
+  description        String?  @db.Text
+  isResolved         Boolean  @default(false)
+  userId             String   @db.Uuid
+  createdAt          DateTime @db.Timestamp(6)
+
+  document Document @relation(fields: [documentId, documentCreatedAt], references: [id, createdAt])
+  user     User     @relation(fields: [userId], references: [id])
+
+  @@map("Suggestion")
+}
+
+model Stream {
+  id        String   @id @default(uuid()) @db.Uuid
+  chatId    String   @db.Uuid
+  createdAt DateTime @db.Timestamp(6)
+
+  chat Chat @relation(fields: [chatId], references: [id])
+
+  @@map("Stream")
 }

@@ -1,0 +1,200 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import 'fumadocs-ui/css/vitepress.css';
+@import 'fumadocs-ui/css/preset.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --animate-shiny-text: shiny-text 8s infinite;
+  @keyframes shiny-text {
+  0%, 90%, 100% {
+    background-position: calc(-100% - var(--shiny-width)) 0;
+    }
+  30%, 60% {
+    background-position: calc(100% + var(--shiny-width)) 0;
+    }
+  }
+  --animate-ripple: ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite
+;
+  @keyframes ripple {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);}
+  50% {
+    transform: translate(-50%, -50%) scale(0.9);}}}
+
+:root {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(0 0% 0%);
+  --muted: hsl(240 10% 90%);
+  --muted-foreground: hsl(0 0% 0%);
+  --popover: hsl(240 5% 95%);
+  --popover-foreground: hsl(0 0% 0%);
+  --card: hsl(240 5% 95%);
+  --card-foreground: hsl(0 0% 0%);
+  --border: hsl(0 0% 80%);
+  --input: hsl(0 0% 95%);
+  --primary: hsl(82 43% 57%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(0 0% 26%);
+  --secondary-foreground: hsl(0 0% 100%);
+  --accent: hsl(82 43% 57%);
+  --accent-foreground: hsl(0 0% 100%);
+  --destructive: hsl(0 100% 50%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --ring: hsl(82 43% 57%);
+  --chart-1: hsl(82 43% 57%);
+  --chart-2: hsl(0 100% 50%);
+  --chart-3: hsl(240 40% 50%);
+  --chart-4: hsl(30 100% 50%);
+  --chart-5: hsl(210 100% 50%);
+  --sidebar-background: hsl(0 0% 100%);
+  --sidebar-foreground: hsl(0 0% 0%);
+  --sidebar-primary: hsl(82 43% 57%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(82 43% 57%);
+  --sidebar-accent-foreground: hsl(0 0% 100%);
+  --sidebar-border: hsl(0 0% 80%);
+  --sidebar-ring: hsl(82 43% 57%);
+  --radius: 0.5rem;
+
+  --en-documents-color: hsl(82 43% 57%);
+  --zh-documents-color: hsl(240 40% 50%);
+  --fd-layout-width: 1650px;
+}
+
+.dark {
+  --background: hsl(0 0% 10%);
+  --foreground: hsl(0 0% 100%);
+  --muted: hsl(0 0% 20%);
+  --muted-foreground: hsl(0 0% 100%);
+  --popover: hsl(240 5% 20%);
+  --popover-foreground: hsl(0 0% 100%);
+  --card: hsl(240 5% 15%);
+  --card-foreground: hsl(0 0% 100%);
+  --border: hsl(0 0% 50%);
+  --input: hsl(0 0% 25%);
+  --primary: hsl(82 43% 57%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(0 0% 30%);
+  --secondary-foreground: hsl(0 0% 100%);
+  --accent: hsl(82 43% 57%);
+  --accent-foreground: hsl(0 0% 100%);
+  --destructive: hsl(0 100% 50%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --ring: hsl(82 43% 57%);
+  --chart-1: hsl(82 43% 57%);
+  --chart-2: hsl(0 100% 50%);
+  --chart-3: hsl(240 40% 80%);
+  --chart-4: hsl(30 100% 60%);
+  --chart-5: hsl(210 100% 60%);
+  --sidebar-background: hsl(0 0% 10%);
+  --sidebar-foreground: hsl(0 0% 100%);
+  --sidebar-primary: hsl(82 43% 57%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(82 43% 57%);
+  --sidebar-accent-foreground: hsl(0 0% 100%);
+  --sidebar-border: hsl(0 0% 50%);
+  --sidebar-ring: hsl(82 43% 57%);
+
+  --en-documents-color: hsl(82 43% 57%);
+  --zh-documents-color: hsl(240 40% 80%);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+.my-rich-text h1 {
+  @apply text-3xl font-bold mt-8 mb-4;
+}
+.my-rich-text h2 {
+  @apply text-2xl font-bold mt-6 mb-3;
+}
+.my-rich-text h3 {
+  @apply text-xl font-semibold mt-5 mb-2;
+}
+.my-rich-text h4 {
+  @apply text-lg font-semibold mt-4 mb-2;
+}
+.my-rich-text p {
+  @apply text-base leading-7 my-4;
+}
+.my-rich-text ul {
+  @apply list-disc pl-6 my-4;
+}
+.my-rich-text ol {
+  @apply list-decimal pl-6 my-4;
+}
+.my-rich-text li {
+  @apply mb-1;
+}
+.my-rich-text a {
+  @apply text-blue-600 underline underline-offset-2 hover:text-blue-800 transition;
+}
+.my-rich-text blockquote {
+  @apply border-l-4 border-gray-300 pl-4 italic text-gray-600 my-6;
+}
+.my-rich-text code {
+  @apply bg-gray-100 rounded px-1.5 py-0.5 font-mono text-sm;
+}
+.my-rich-text pre {
+  @apply bg-gray-800 text-gray-100 rounded-lg p-4 my-4 overflow-x-auto;
+}
+.my-rich-text table {
+  @apply w-full my-4 border border-gray-300 rounded;
+}
+.my-rich-text th,
+.my-rich-text td {
+  @apply border border-gray-300 px-3 py-2;
+}
+.my-rich-text img {
+  @apply max-w-full rounded my-4;
+}
+.my-rich-text hr {
+  @apply my-8 border-gray-200;
+}

@@ -19,20 +19,20 @@ export async function middleware(request: NextRequest) {
   }
 
   // ④ 保护 `/{locale}/dashboard/**`
-  if (segments[0] === 'dashboard') {
-    // 这里的session判断，暂时只通过cookie判断，后续可以考虑通过数据库判断
-    // const session = await auth();
+  // if (segments[0] === 'dashboard') {
+  //   // 这里的session判断，暂时只通过cookie判断，后续可以考虑通过数据库判断
+  //   // const session = await auth();
 
-    // 从cookie中获取session
-    const token = request.cookies.get("authjs.session-token")?.value;
-    if (!token) {
-      const loginUrl = request.nextUrl.clone();
-      loginUrl.pathname = `/${locale}/sign-in`;
-      loginUrl.searchParams.set('callbackUrl', request.nextUrl.pathname);
-      loginUrl.searchParams.set('reason', 'auth'); // 👈 添加提示参数
-      return NextResponse.redirect(loginUrl);
-    }
-  }
+  //   // 从cookie中获取session
+  //   const token = request.cookies.get("authjs.session-token")?.value;
+  //   if (!token) {
+  //     const loginUrl = request.nextUrl.clone();
+  //     loginUrl.pathname = `/${locale}/sign-in`;
+  //     loginUrl.searchParams.set('callbackUrl', request.nextUrl.pathname);
+  //     loginUrl.searchParams.set('reason', 'auth'); // 👈 添加提示参数
+  //     return NextResponse.redirect(loginUrl);
+  //   }
+  // }
 
   // ⑤ 其余请求放行
   return intlMiddleware(request);

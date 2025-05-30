@@ -65,7 +65,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         icon: SquareTerminal,
         isActive: true,
         items: [
-          { title: t("main.playground.history"), url: "#" },
+          { title: t("main.playground.chatbot"), url: "/dashboard/chatbot" },
           { title: t("main.playground.starred"), url: "#" },
           { title: t("main.playground.settings"), url: "#" },
         ],

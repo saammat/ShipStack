@@ -345,7 +345,7 @@
       "main": {
         "playground": {
           "title": "Playground",
-          "history": "History",
+          "chatbot": "ChatBot",
           "starred": "Starred",
           "settings": "Settings"
         },
