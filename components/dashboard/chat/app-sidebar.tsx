@@ -18,12 +18,12 @@ import {
 import Link from 'next/link';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 
-export function AppSidebar({ user }: { user: User | undefined }) {
+export function ChatBotAppSidebar({ user }: { user: User | undefined }) {
   const router = useRouter();
   const { setOpenMobile } = useSidebar();
 
   return (
-    <Sidebar className="group-data-[side=left]:border-r-0">
+    <Sidebar side='right'>
       <SidebarHeader>
         <SidebarMenu>
           <div className="flex flex-row justify-between items-center">
